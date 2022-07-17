@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{23D9BB27-5009-4EC9-8AE2-CA0B2B120267}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SampleWebSite</RootNamespace>
+    <AssemblyName>SampleWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44304</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SampleWebSite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SampleWebSite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about-us.html" />
+    <Content Include="contact-us.html" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\assets\arrowleft.png" />
+    <Content Include="css\assets\arrowright.png" />
+    <Content Include="css\assets\arrow_left.png" />
+    <Content Include="css\assets\arrow_left2.png" />
+    <Content Include="css\assets\arrow_right.png" />
+    <Content Include="css\assets\arrow_right2.png" />
+    <Content Include="css\assets\boxed_bgtile.png" />
+    <Content Include="css\assets\bullet.png" />
+    <Content Include="css\assets\bullets.png" />
+    <Content Include="css\assets\bullets2.png" />
+    <Content Include="css\assets\bullet_boxed.png" />
+    <Content Include="css\assets\coloredbg.png" />
+    <Content Include="css\assets\gridtile.png" />
+    <Content Include="css\assets\gridtile_3x3.png" />
+    <Content Include="css\assets\gridtile_3x3_white.png" />
+    <Content Include="css\assets\gridtile_white.png" />
+    <Content Include="css\assets\large_left.png" />
+    <Content Include="css\assets\large_right.png" />
+    <Content Include="css\assets\loader.gif" />
+    <Content Include="css\assets\navigdots.png" />
+    <Content Include="css\assets\navigdots_bgtile.png" />
+    <Content Include="css\assets\shadow1.png" />
+    <Content Include="css\assets\shadow2.png" />
+    <Content Include="css\assets\shadow3.png" />
+    <Content Include="css\assets\small_left.png" />
+    <Content Include="css\assets\small_left_boxed.png" />
+    <Content Include="css\assets\small_right.png" />
+    <Content Include="css\assets\small_right_boxed.png" />
+    <Content Include="css\assets\timer.png" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\Flaticon.svg" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\hover.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\owl.css" />
+    <Content Include="css\owl.video.play.html" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\revolution-slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\revicons90c690c6.svg" />
+    <Content Include="images\background\page-banner-bg-2.jpg" />
+    <Content Include="images\clients\1.png" />
+    <Content Include="images\clients\2.png" />
+    <Content Include="images\clients\3.png" />
+    <Content Include="images\clients\4.png" />
+    <Content Include="images\clients\5.png" />
+    <Content Include="images\clients\6.png" />
+    <Content Include="images\fancybox\blank.gif" />
+    <Content Include="images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="images\fancybox\fancybox_loading.gif" />
+    <Content Include="images\fancybox\fancybox_overlay.png" />
+    <Content Include="images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="images\fancybox\fancybox_sprite.png" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\footer-text-logo.png" />
+    <Content Include="images\gradient\g30.html" />
+    <Content Include="images\gradient\g40.html" />
+    <Content Include="images\icons\counter-icon.png" />
+    <Content Include="images\icons\envelop_bg.png" />
+    <Content Include="images\icons\fun-fact-bg.png" />
+    <Content Include="images\icons\icon-plus.png" />
+    <Content Include="images\icons\preloader.gif" />
+    <Content Include="images\logo-1.png" />
+    <Content Include="images\logo-2.png" />
+    <Content Include="images\main-slider\image-1.jpg" />
+    <Content Include="images\main-slider\image-2.jpg" />
+    <Content Include="images\main-slider\image-3.jpg" />
+    <Content Include="images\parallax\image-1.jpg" />
+    <Content Include="images\resource\7up_drinks.jpg" />
+    <Content Include="images\resource\about-us-image-1.jpg" />
+    <Content Include="images\resource\apple_milkshake.jpg" />
+    <Content Include="images\resource\badam_milkshake.jpg" />
+    <Content Include="images\resource\bovanto_drinks.jpg" />
+    <Content Include="images\resource\butterscotch_iceceram.jpg" />
+    <Content Include="images\resource\chips_snacks.jpg" />
+    <Content Include="images\resource\chocolate_iceceram.jpg" />
+    <Content Include="images\resource\chocolate_milkshake.jpg" />
+    <Content Include="images\resource\chocolate_snacks.jpg" />
+    <Content Include="images\resource\coc_drinks.jpg" />
+    <Content Include="images\resource\custardapple_juice.jpg" />
+    <Content Include="images\resource\cutlet_snacks.jpg" />
+    <Content Include="images\resource\dates_juice.jpg" />
+    <Content Include="images\resource\dates_milkshake.jpg" />
+    <Content Include="images\resource\featured-image-1.jpg" />
+    <Content Include="images\resource\fingerchips_snacks.jpg" />
+    <Content Include="images\resource\grape_juice.jpg" />
+    <Content Include="images\resource\mango_juice.jpg" />
+    <Content Include="images\resource\mango_milkshake.jpg" />
+    <Content Include="images\resource\maza_drinks.jpg" />
+    <Content Include="images\resource\melon_juice.jpg" />
+    <Content Include="images\resource\melon_milkshake.jpg" />
+    <Content Include="images\resource\monkey.png" />
+    <Content Include="images\resource\monkey_footer.png" />
+    <Content Include="images\resource\mosambi_juice.jpg" />
+    <Content Include="images\resource\orange_iceceram.jpg" />
+    <Content Include="images\resource\pappaya_juice.jpg" />
+    <Content Include="images\resource\pepsi_drinks.jpg" />
+    <Content Include="images\resource\pinaple_juice.jpg" />
+    <Content Include="images\resource\pista_iceceram.jpg" />
+    <Content Include="images\resource\pista_milkshake.jpg" />
+    <Content Include="images\resource\pomegranate_juice.jpg" />
+    <Content Include="images\resource\post-image-1.jpg" />
+    <Content Include="images\resource\post-image-2.jpg" />
+    <Content Include="images\resource\post-image-3.jpg" />
+    <Content Include="images\resource\quote-slider-img.jpg" />
+    <Content Include="images\resource\quote-slider-img_1.jpg" />
+    <Content Include="images\resource\quote-slider-img_2.jpg" />
+    <Content Include="images\resource\quote-thumb.jpg" />
+    <Content Include="images\resource\rolls_snacks.jpg" />
+    <Content Include="images\resource\sharja_milkshake.jpg" />
+    <Content Include="images\resource\sprite_drinks.jpg" />
+    <Content Include="images\resource\straberry_iceceram.jpg" />
+    <Content Include="images\resource\strawberry_milkshake.jpg" />
+    <Content Include="images\resource\testi-thumb-1.jpg" />
+    <Content Include="images\resource\testi-thumb-2.jpg" />
+    <Content Include="images\resource\testi-thumb-3.jpg" />
+    <Content Include="images\resource\venilla_iceceram.jpg" />
+    <Content Include="images\search.png" />
+    <Content Include="index-2.html" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bxslider.js" />
+    <Content Include="js\googlemaps.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.mixitup.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\revolution.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\validate.js" />
+    <Content Include="js\wow.js" />
+    <Content Include="menu.html" />
+    <Content Include="products.html" />
+    <Content Include="revolution.themepunch.com\wp-content\uploads\2014\05\wave21.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Flaticon.eot" />
+    <Content Include="css\Flaticon.ttf" />
+    <Content Include="css\Flaticon.woff" />
+    <Content Include="css\Flaticond41d.eot" />
+    <Content Include="fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="fonts\fontawesome-webfonte0a5.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="fonts\revicons90c690c6.eot" />
+    <Content Include="fonts\revicons90c690c6.ttf" />
+    <Content Include="fonts\revicons90c690c6.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60371</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44304/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
